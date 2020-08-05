@@ -1,4 +1,11 @@
 # Docker
+- task: AzureWebAppContainer@1
+  inputs:
+    azureSubscription: 'RnD-Sub(646a11c2-2702-4429-b085-9bcecee67b10)'
+    appName: 'rnd-web-app-linux-docker-02'
+    deployToSlotOrASE: true
+    resourceGroupName: 'rnd-containers-rg'
+    slotName: 'DEV'
 # Build and push an image to Azure Container Registry
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
